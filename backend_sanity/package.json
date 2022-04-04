@@ -8,7 +8,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
-    "build": "sanity build"
+    "build": "sanity build",
+    "client": "npm start --prefix ../frontend_react",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "keywords": [
     "sanity"
@@ -21,11 +23,11 @@
     "@sanity/desk-tool": "^2.29.3",
     "@sanity/eslint-config-studio": "^2.0.0",
     "@sanity/vision": "^2.29.3",
+    "concurrently": "^7.1.0",
     "eslint": "^8.6.0",
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
     "styled-components": "^5.2.0"
-  },
-  "devDependencies": {}
+  }
 }
