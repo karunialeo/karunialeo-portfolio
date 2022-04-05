@@ -66,6 +66,13 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
+  .badge-cmp {
+    p,
+    h1 {
+      text-align: right;
+    }
+  }
+
   .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
